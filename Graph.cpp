@@ -331,7 +331,7 @@ void Graph::findShortestPath(int source) {
 	setSource(source);
 	
 	// find shortest path for all vertices
-	for(int i = 0; i < m_size - 1; i++) {
+	for(int i = 0; i < m_size; i++) {
 		int lowestMove = findLowestMove(source);
 		if(lowestMove != INFINITY) {
 			visitVertex(source, lowestMove);
